@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+    - '7'
+
+install:
+    - npm install
+
+deploy:
+    provider: heroku
+    skip_cleanup: true
+    app: react-redux-todo-list-app
+    api_key:
+        secure: "Ic53Cabu2EP07k5Vwbh9nvemNwIe9pB1kF1ZPh+pY1oSwcCYZRlEDC8M5tLB2m7MffErIClvjATXPbPX8pqf0HCmuwwu1+2K+I7hQ5rgFTZIcj+0BF+s/aeSGfAHXdZdi4ukO1Cp8pyjo9o2/fQN/QHf1cOAl4UlSoQEmJLOCwgAxnXJqOqPsu1+Ni8ocWCd4Z9n0mUr/B8kWiygCNvoadKWXZLZVue8mzhYeKqua21njI2RMhaMZl1Kog3n8eWYXdC0mwW30O+mYB6UxL6W8+PnwHFgwOFcIt9jNdYStGMrGhQo6LKDjy+rqD5NAtLWJ1sLxcEmT8ghGvc1nLyk6GOXTJYJDTqphQ279ZFGTv2d17zfQxxHRWEKcGi0DoSwF9goxtW8B93swucnp3bp0iczHSdClBtK2qqmTjZTUKoLgXpQNXvES/I/EiikCkvL6+WxI0+1aUp4nBsG195uabjvIv5ttyi3ARz+aY3qXHUoH2slkli/DjoMWFfupJhf1SzQQAEpBqKeD6uLVVGOu2T6DEC6mZg2YFmQjc92hDzF4HpFabLS4KAkFdRykFaLIp7OneS7Vgt4IOsCxQP5R8I9KERbvT2zvgHK488npO3vHJitnbrGNE/tt4fQ+Bi67MNWHSHKXVMHgleLvyKxBs64w6hUOtlOukU/0kNWVh4="
