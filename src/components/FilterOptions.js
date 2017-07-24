@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import Search from './Search';
 import Filter from './Filter';
@@ -23,6 +24,10 @@ const FilterOptions = ({store}) => {
             />
         </div>
     );
+};
+
+FilterOptions.propTypes = {
+    store: PropTypes.object
 };
 
 export default FilterOptions;

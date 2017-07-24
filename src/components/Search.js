@@ -1,7 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import styles from './../styles/Search.css';
 
 const Search = ({handleSearchPhraseChange}) => {
+    // refs
     let input;
 
     return (
@@ -22,6 +25,10 @@ const Search = ({handleSearchPhraseChange}) => {
             </button>
         </div>
     );
+};
+
+Search.propTypes = {
+    handleSearchPhraseChange: PropTypes.func
 };
 
 export default Search;

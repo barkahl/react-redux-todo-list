@@ -8,12 +8,13 @@ const itemReducer = (state = {}, action) => {
                 text: action.text,
                 done: false
             };
+
         case 'TOGGLE_ITEM':
             if (state.id === action.id) {
                 return Object.assign({}, state, {done: !state.done});
             }
-
             return state;
+
         default:
             return state;
     }

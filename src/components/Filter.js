@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import styles from './../styles/Filter.css';
 
 const Filter = ({currentFilterType, handleFilterTypeChange}) =>
@@ -37,5 +39,10 @@ const Filter = ({currentFilterType, handleFilterTypeChange}) =>
         </label>
     </div>
 ;
+
+Filter.propTypes = {
+    currentFilterType: PropTypes.string,
+    handleFilterTypeChange: PropTypes.func
+};
 
 export default Filter;

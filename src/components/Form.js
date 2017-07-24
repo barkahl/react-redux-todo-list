@@ -1,7 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import styles from './../styles/Form.css';
 
 const Form = ({dispatch}) => {
+    // refs
     let input;
 
     const handleSubmitForm = () => {
@@ -36,6 +39,10 @@ const Form = ({dispatch}) => {
             <button type="submit">Add</button>
         </form>
     );
+};
+
+Form.propTypes = {
+    dispatch: PropTypes.func
 };
 
 export default Form;

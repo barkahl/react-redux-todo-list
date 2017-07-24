@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import styles from './../styles/Item.css';
 
 const Item = ({text, done, id, dispatch}) =>
@@ -23,5 +25,12 @@ const Item = ({text, done, id, dispatch}) =>
         </button>
     </li>
 ;
+
+Item.propTypes = {
+    text: PropTypes.string,
+    done: PropTypes.bool,
+    id: PropTypes.number,
+    dispatch: PropTypes.func
+};
 
 export default Item;

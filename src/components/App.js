@@ -23,7 +23,7 @@ const App = ({store}) => {
 
         return items;
     };
-    
+
     return (
         <div>
             <Form dispatch={store.dispatch} />

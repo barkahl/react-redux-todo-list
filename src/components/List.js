@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import Item from './Item';
 
@@ -21,6 +22,11 @@ const List = ({getItems, dispatch}) => {
             {renderedItems}
         </ul>
     );
+};
+
+List.propTypes = {
+    getItems: PropTypes.func,
+    dispatch: PropTypes.func
 };
 
 export default List;
